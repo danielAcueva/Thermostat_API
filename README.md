@@ -12,20 +12,20 @@ UDP client to send fake UDP temperature messages to allow for realistic test sce
 # Requirements
 
 The following requirements are met for this thermostat API:
-    * The thermostat consists of four settable temperature control mode settings 
-        * Off: No temperature control
-        * Auto: Heat or cool to maintain a specific temperature
-        * Heat: Heat to guarantee a high temperature
-        * Cool: Cool to guarantee a low temperature
-    * Track the current thermostat status to determine current state
-        * Inactive: No active heating or cooling
-        * Heating: Actively heating
-        * Cooling: Actively cooling
-    * Allow a settable temperature setpoint as the target temperature to control to
-    * Allow a settable temperature margin value
-        * Start heating (assuming heat or auto mode) when the temperature is below the setpoint - margin 
-        * Start cooling (assuming cool or auto mode) when the temperature is above the setpoint + margin 
-        * If actively heating or cooling, stop once the setpoint is reached
+* The thermostat consists of four settable temperature control mode settings 
+  * Off: No temperature control
+  * Auto: Heat or cool to maintain a specific temperature
+  * Heat: Heat to guarantee a high temperature
+  * Cool: Cool to guarantee a low temperature
+* Track the current thermostat status to determine current state
+  * Inactive: No active heating or cooling
+  * Heating: Actively heating
+  * Cooling: Actively cooling
+* Allow a settable temperature setpoint as the target temperature to control to
+* Allow a settable temperature margin value
+  * Start heating (assuming heat or auto mode) when the temperature is below the setpoint - margin 
+  * Start cooling (assuming cool or auto mode) when the temperature is above the setpoint + margin 
+  * If actively heating or cooling, stop once the setpoint is reached
 
 # Design Decisions
 
